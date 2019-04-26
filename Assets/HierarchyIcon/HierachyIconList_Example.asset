@@ -3,15 +3,23 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a82beb28a9791424fa07ce9d9335112f, type: 3}
   m_Name: HierachyIconList_Example
   m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
   p_listIconMappingData_Type:
   - pTexture: {fileID: 2800000, guid: 9e59d774f83497f4381f5a2ca148a106, type: 3}
     iOrder: 0
@@ -21,6 +29,18 @@ MonoBehaviour:
     iOrder: 0
     bEnable: 1
     strTypeName: AudioListener
+  - pTexture: {fileID: 0}
+    iOrder: 0
+    bEnable: 1
+    strTypeName: 
+  - pTexture: {fileID: 0}
+    iOrder: 0
+    bEnable: 1
+    strTypeName: 
+  - pTexture: {fileID: 0}
+    iOrder: 0
+    bEnable: 1
+    strTypeName: 
   p_listIconMappingData_Tag:
   - pTexture: {fileID: 2800000, guid: 7316b034de0199d4888be594fff478cf, type: 3}
     iOrder: 100

@@ -90,11 +90,19 @@ public class HierachyIconConfig : CSingletonSOBase<HierachyIconConfig>
 
         for (int i = 0; i < arrIconMapping.Length; i++)
         {
-            for (int j = 0; j < arrIconMapping[i].p_listIconMappingData_Type.Count; j++)
-                mapIconPer_Type.Add(arrIconMapping[i].p_listIconMappingData_Type[j].strTypeName, arrIconMapping[i].p_listIconMappingData_Type[j]);
+            List<IconMappingData_Type> listIconMappingData_Type = arrIconMapping[i].p_listIconMappingData_Type;
+            for (int j = 0; j < listIconMappingData_Type.Count; j++)
+            {
+                if(listIconMappingData_Type[j] != null && string.IsNullOrEmpty(listIconMappingData_Type[j].strTypeName) == false)
+                    mapIconPer_Type.Add(listIconMappingData_Type[j].strTypeName, listIconMappingData_Type[j]);
+            }
 
-            for (int j = 0; j < arrIconMapping[i].p_listIconMappingData_Tag.Count; j++)
-                mapIconPer_Tag.Add(arrIconMapping[i].p_listIconMappingData_Tag[j].strTag, arrIconMapping[i].p_listIconMappingData_Tag[j]);
+            List<IconMappingData_Tag> listIconMappingData_Tag = arrIconMapping[i].p_listIconMappingData_Tag;
+            for (int j = 0; j < listIconMappingData_Tag.Count; j++)
+            {
+                if (listIconMappingData_Tag[j] != null && string.IsNullOrEmpty(listIconMappingData_Tag[j].strTag) == false)
+                    mapIconPer_Tag.Add(arrIconMapping[i].p_listIconMappingData_Tag[j].strTag, arrIconMapping[i].p_listIconMappingData_Tag[j]);
+            }
         }
     }
 }
