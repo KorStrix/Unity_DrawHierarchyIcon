@@ -18,11 +18,12 @@ EditorApplication.hierarchyWindowItemOnGUI
 
 
 ## 기능들
-1. Script에서 아이콘을 그리는 법
-2. 컨피그 파일을 통하여 아이콘을 그리는 법이 있으며, 이미지와 그리기 순서를 정할 수 있습니다.
+1. Script에서 아이콘을 그리기.
+2. 컨피그 파일(Scriptable Object)을 통하여 아이콘을 그리기.
+3. 상기 방법 모두 이미지와 그리기 순서를 정할 수 있습니다.
 
 - 컨피그 파일을 통한 방법은 하단의 이미지와 같이 **Tye별로 세팅하는 법과 Tag를 이용하여 세팅하는 법이 있습니다.**
-- **Odin Inspector** Asset을 활용하여 편하게 활용할 수 있으며, 없어도 사용가능합니다.
+- **Odin Inspector** Asset을 활용하여 편하게 활용할 수 있으며, **없어도 사용가능합니다.** 
 
 
 ### Before Odin
